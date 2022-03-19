@@ -14,7 +14,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-pickle_in = open(r'C:\Users\elirj\Documents\School\Active\AI Enterprise\Lab4\classifier.pkl','rb')
+pickle_in = open('classifier.pkl','rb')
 classifier = pickle.load(pickle_in)
   
 @app.route('/')
